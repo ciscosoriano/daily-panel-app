@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_headline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_view_headline_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/text_view_headline_description"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@color/colorArticleFeedBackground"/>
+            </LinearLayout>
+
+            <com.app.dailypanel.layout.CustomGridView
+                android:id="@+id/grid_view_articles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:columnWidth="150dp"
+                android:numColumns="1"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
