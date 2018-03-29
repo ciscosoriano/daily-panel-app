@@ -3,6 +3,7 @@ package com.app.dailypanel.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,7 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 import java.util.List;
+import java.util.Locale;
 
 public class PanelsFeedAdapter extends BaseAdapter {
     private static final String TAG = PanelsFeedAdapter.class.getName();
@@ -29,6 +31,8 @@ public class PanelsFeedAdapter extends BaseAdapter {
 
     private ImageLoader mImageLoader;
     private DisplayImageOptions displayImageOptions;
+
+    TextToSpeech texttospeech_obj;
 
     public PanelsFeedAdapter(Context newContext, Activity newActivity, List<Article> newPanelList) {
         Log.i(TAG, "PanelsFeedAdapter");
@@ -48,6 +52,17 @@ public class PanelsFeedAdapter extends BaseAdapter {
                 .bitmapConfig(Bitmap.Config.RGB_565)
                 .displayer(new FadeInBitmapDisplayer(200))
                 .build();
+
+        //Initializing texttospeech_obj
+
+        texttospeech_obj = new TextToSpeech(mContext.getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.ERROR) {
+                    texttospeech_obj.setLanguage(Locale.US);
+                }
+            }
+        });
     }
 
     @Override
@@ -79,6 +94,19 @@ public class PanelsFeedAdapter extends BaseAdapter {
 
         String panelImageUri = article.getImageResource();
         String panelCaption = article.getCaption();
+
+        //calling speak() using texttospeech_obj inside onclick listener for the TextView tvpanelCaption
+
+        final String text_speech=tvPanelCaption.getText().toString();
+
+        tvPanelCaption.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                texttospeech_obj.speak(text_speech,TextToSpeech.QUEUE_FLUSH, null);
+
+            }
+        });
 
         Log.e(TAG, panelCaption);
 
