@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
-    android:elevation="2dp"
+    android:padding="@dimen/padding5"
+    android:elevation="@dimen/elevation2"
     android:orientation="horizontal"
     android:background="@color/colorArticleFeedBackground">
 
     <ImageView
         android:id="@+id/image_view_article_thumbnail"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/layout0"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         android:adjustViewBounds="true"
@@ -19,8 +19,8 @@
         android:id="@+id/text_view_article_description"
         android:textStyle="bold"
         android:textColor="@color/colorDefaultText"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/layout0"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:paddingLeft="10dp"/>
+        android:paddingLeft="@dimen/padding10"/>
 </LinearLayout>
