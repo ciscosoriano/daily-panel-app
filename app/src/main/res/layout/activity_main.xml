@@ -9,27 +9,80 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
+    <LinearLayout
+        android:id="@+id/linear_layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingRight="@dimen/padding10">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbarBackground"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10">
+
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:src="@drawable/refresh"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorToolbarBackground"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/home_text"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtSize_large"
+                android:paddingTop="@dimen/padding8"/>
+
+            <TextView
+                android:id="@+id/daily_panel_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorToolbarBackground"
+                android:onClick="onClick"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/about_text"
+                android:textSize="@dimen/txtSize_large"
+                android:paddingTop="@dimen/padding8"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/padding10"
+        android:layout_marginBottom="@dimen/padding10"
+        android:layout_below="@+id/linear_layout_top"
         android:fillViewport="true"
         android:scrollbars="none">
 
         <LinearLayout
             android:id="@+id/linear_layout_headline"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="2dp"
+                android:elevation="@dimen/elevation2"
                 android:orientation="vertical">
 
                 <ImageView
@@ -42,12 +95,12 @@
 
                 <TextView
                     android:id="@+id/text_view_headline_description"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/txtSize_mediumlarge"
                     android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingBottom="@dimen/padding10"
                     android:background="@color/colorArticleFeedBackground"/>
             </LinearLayout>
 
@@ -56,12 +109,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:columnWidth="150dp"
-                android:numColumns="1"
-                android:verticalSpacing="10dp"
-                android:horizontalSpacing="10dp"
+                android:columnWidth="@dimen/padding150"
+                android:verticalSpacing="@dimen/padding10"
+                android:horizontalSpacing="@dimen/padding10"
                 android:stretchMode="columnWidth"
-                android:paddingTop="10dp"/>
+                android:paddingTop="@dimen/padding10"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

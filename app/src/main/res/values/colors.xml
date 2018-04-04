@@ -9,4 +9,7 @@
     <color name="colorDefaultText">#000000</color>
     <color name="colorLineDividerTopSelectionBar">#E6E6E6</color>
     <color name="colorArticleFeedBackground">#FFFFFF</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
 </resources>
