@@ -22,12 +22,13 @@ The key functions of the Daily Panel App are:
 
 Below are screen shots:
 
+<p align="center">
 ![Launch screen](readme_assets/Main.png)|
-![Individual news panel](readme_assets/Panels.png)|
+![Individual news panel](readme_assets/Panels.png) </p>
 
-
+<p align="center">
 ![About Us screen](readme_assets/AboutUs.png)|
-![Founder screen](readme_assets/Founder.png)
+![Founder screen](readme_assets/Founder.png) </p>
 
 ## Motivation
 
@@ -47,12 +48,13 @@ Describe and show how to run the tests with code examples.
 
 The following group members designed and developed this project:
 
-    Francisco Soriano
-    Hailey Mortimore
-    Lakshmi Mahesh
-    Lindsey Giuliano
-    Allene Barrett
-    Claudia Hill
+Francisco Soriano -- 
+Hailey Mortimore -- 
+Lakshmi Mahes -- 
+Lindsey Giuliano -- 
+Allene Barrett --  
+Claudia Hill
+
 
 ## License
 
