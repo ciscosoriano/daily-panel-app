@@ -22,15 +22,12 @@ The key functions of the Daily Panel App are:
 
 Below are screen shots:
 
-<div id="banner">
-    <div class="inline-block">
-   <kbd><img width="150" height="266" src="readme_assets/Main.png"></kbd></div>
-   <div class="inline-block">
-   <kbd><img width="150" height="266" src="https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/AboutUs.png"></kbd></div>
-  <div class="inline-block"> 
- <kbd><img width="150" height="266" src="https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/Founder.png"></kbd>
- </div>
- </div>
+
+
+  Main                       |  Panels                          |  About Us                        |               
+:---------------------------:|:-------------------------------: |:-------------------------------: |
+:---------------------------:|:-------------------------------: |:-------------------------------: |
+![](readme_assets/Main.png)  |  ![](readme_assets/AboutUs.png)  |  ![](readme_assets/AboutUs.png)  | 
 
 ![Launch screen](readme_assets/Main.png)
 ![Individual news panel](readme_assets/Panels.png)
