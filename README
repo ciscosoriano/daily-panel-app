@@ -4,10 +4,13 @@
 
 Name:   Daily Panel Android App
 
-This is a project that turns https://DailyPanel.org into a user-friendly Android application.  
-The goal of this app is to help and dignify those who are learning to read English. 
+This is a project that turns https://DailyPanel.org into a user-friendly Android application. 
 
+The goal of this app is to help and dignify those who are learning to read English. 
 The app is designed to be as simple and easy-to-use as possible, so the user can focus  on what matters most, learning to read English.
+
+
+![Animated Daily Panel app](readme_assets/daily_panel_app.gif)
 
 ## Code Description
 
@@ -18,9 +21,9 @@ The key functions of the Daily Panel App are:
 
 Below are screen shots:
 
-![Splash screen of Daily Panel](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme1.png)
-![Screen of selected news item](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png)
-![Screen of About Us Activity](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)
+![Beginning Screen](https://github.com/hillc255/TennisScore/blob/master/app/src/main/res/drawable/readme1.png)|
+![Tennis score in progress](https://github.com/hillc255/TennisScore/blob/master/app/src/main/res/drawable/readme2.png)|
+![Tennis score game](https://github.com/hillc255/TennisScore/blob/master/app/src/main/res/drawable/readme3.png)
 
 ## Motivation
 
