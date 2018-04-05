@@ -21,10 +21,10 @@ The key functions of the Daily Panel App are:
 
 Below are screen shots:
 
-![Launch screen](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/Main.jpg)|
-![Individual news panel](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/Panels.jpg)|
-![About Us screen](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/Aboutus.jpg)
-![Founder screen](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/Founder.jpg)
+![Launch screen](https://Main.jpg)|
+![Individual news panel](readme_assets/Panels.jpg)|
+![About Us screen](readme_assets/Aboutus.jpg)
+![Founder screen](readme_assets/Founder.jpg)
 
 ## Motivation
 
