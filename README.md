@@ -52,7 +52,8 @@ Describe and show how to run the tests with code examples.
 ## Contributors
 
 The following group members designed and developed this project:
-Francisco Soriano - Hailey Mortimore - Lakshmi Mahes - Lindsey Giuliano - Allene Barrett - Claudia Hill
+
+<p>Francisco Soriano - Hailey Mortimore - Lakshmi Mahes - Lindsey Giuliano - Allene Barrett - Claudia Hill</p>
 
 ## License
 
