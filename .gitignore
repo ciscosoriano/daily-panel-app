@@ -1,3 +1,8 @@
 build/
+<<<<<<< HEAD
 .idea
 .gradle
+=======
+.gradle/
+.idea/
+>>>>>>> e20d4784d3874f701553aae8ff0ac10ac86a9d95

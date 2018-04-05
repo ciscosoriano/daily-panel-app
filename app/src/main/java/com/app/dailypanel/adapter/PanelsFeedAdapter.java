@@ -46,6 +46,7 @@ public class PanelsFeedAdapter extends BaseAdapter {
         displayImageOptions = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(true)
                 .cacheInMemory(true)
+                .showImageForEmptyUri(R.drawable.noimage)  //added empty image
                 .cacheOnDisc(true)
                 .postProcessor(null)
                 .imageScaleType(ImageScaleType.EXACTLY)

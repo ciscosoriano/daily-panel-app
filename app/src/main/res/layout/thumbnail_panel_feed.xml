@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:elevation="2dp"
+    android:padding="@dimen/padding10"
+    android:elevation="@dimen/elevation2"
     android:gravity="center"
     android:orientation="vertical"
     android:background="@color/colorArticleFeedBackground">
@@ -17,10 +17,10 @@
 
     <TextView
         android:id="@+id/text_view_panel_caption"
-        android:textSize="18sp"
+        android:textSize="@dimen/txtSize_mediumlarge"
         android:textColor="@color/colorDefaultText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="@dimen/padding10"
         android:gravity="center" />
 </LinearLayout>

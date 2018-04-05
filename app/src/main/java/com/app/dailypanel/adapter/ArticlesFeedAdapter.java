@@ -52,7 +52,7 @@ public class ArticlesFeedAdapter extends BaseAdapter {
 
         displayImageOptions = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(true)
-                .showImageForEmptyUri(R.drawable.empty_background)
+                .showImageForEmptyUri(R.drawable.noimage)
                 .cacheInMemory(true)
                 .cacheOnDisc(true)
                 .postProcessor(null)

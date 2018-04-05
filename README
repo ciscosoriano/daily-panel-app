@@ -1,11 +1,59 @@
-This is a project that turns DailyPanel.org into a user-friendly Android App. 
-The goal of this app is to help and dignify those who are learning to read English. 
-The app is designed to be as simple and easy-to-use as possible, so the user can focus
-on what matters most, learning to read English. 
+#  Daily Panel Android App
 
-Group Members:
-Claudia Hill
-Hailey Mortimore 
+## Synopsis
+
+Name:   Daily Panel Android App
+
+This is a project that turns https://DailyPanel.org into a user-friendly Android application. 
+
+The goal of this app is to help and dignify those who are learning to read English. 
+The app is designed to be as simple and easy-to-use as possible, so the user can focus  on what matters most, learning to read English.
+
+
+![Animated Daily Panel app](readme_assets/daily_panel_app.gif)
+
+## Code Description
+
+The key functions of the Daily Panel App are:
+ 1. JSON feeds which pull individual panels and titles from the Daily Panel website into the Main Activity.
+ 2. Text-To-Speech to capture the titles.
+ 3. About Us Activity page with WebViews to capture screen information on the website.
+
+Below are screen shots:
+
+![Launch screen](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/readme1.png)|
+![Individual news panel](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/readme2.png)|
+![About Us screen](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/readme3.png)
+![Founder screen](https://github.com/ciscosoriano/daily-panel-app/blob/master/app/src/main/res/drawable/readme4.png)
+
+## Motivation
+
+Application was a group project for the "Grow with Google Challenge Scholarship: Android Basics" course on Udacity.
+
+## Installation
+
+Project can be downloaded from GitHub:  https://github.com/ciscosoriano/daily-panel-app
+
+## API Reference
+
+## Tests (Future consideration!)
+
+Describe and show how to run the tests with code examples.
+
+## Contributors
+
+The following group members designed and developed this project:
+
 Francisco Soriano
+Hailey Mortimore 
+Harshika Mahesh
 Lindsey Giuliano
 Allene Barrett
+Claudia Hill
+
+
+
+## License
+
+Only to be used for educational purposes.
+
