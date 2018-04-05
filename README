@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Name:   Daily Panel Android App
+Name:   Daily Panel App
 
 This is a project that turns website http://dailypanel.org/ into a user-friendly Android application. 
 
@@ -23,7 +23,7 @@ Below are screen shots:
 
 ![Launch screen](readme_assets/Main.png)|
 ![Individual news panel](readme_assets/Panels.png)|
-![About Us screen](readme_assets/Aboutus.png)|
+![About Us screen](readme_assets/AboutUs.png)|
 ![Founder screen](readme_assets/Founder.png)
 
 ## Motivation
