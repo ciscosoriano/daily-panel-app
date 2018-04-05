@@ -53,7 +53,7 @@ Describe and show how to run the tests with code examples.
 
 The following group members designed and developed this project:
 
-<p>Francisco Soriano - Hailey Mortimore - Lakshmi Mahes - Lindsey Giuliano - Allene Barrett - Claudia Hill</p>
+<p><i>Francisco Soriano - Hailey Mortimore - Lakshmi Mahes - Lindsey Giuliano - Allene Barrett - Claudia Hill</i></p>
 
 ## License
 
