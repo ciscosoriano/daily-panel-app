@@ -1,4 +1,4 @@
-#  Daily Panel Android App
+# Daily Panel Android App
 
 ## Synopsis
 
