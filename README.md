@@ -22,13 +22,12 @@ The key functions of the Daily Panel App are:
 
 Below are screen shots:
 
-<p align="center">
 ![Launch screen](readme_assets/Main.png)|
-![Individual news panel](readme_assets/Panels.png) </p>
+![Individual news panel](readme_assets/Panels.png)
 
-<p align="center">
+
 ![About Us screen](readme_assets/AboutUs.png)|
-![Founder screen](readme_assets/Founder.png) </p>
+![Founder screen](readme_assets/Founder.png) 
 
 ## Motivation
 
