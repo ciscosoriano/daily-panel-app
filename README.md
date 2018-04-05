@@ -26,7 +26,7 @@ Below are screen shots:
 
   Main                       |  Panels                          |  About Us                        |               
 :---------------------------:|:-------------------------------: |:-------------------------------: |
-![](readme_assets/Main.png)  |  ![](readme_assets/AboutUs.png)  |  ![](readme_assets/AboutUs.png)  | 
+![](readme_assets/Main.png)  |  ![](readme_assets/Panels.png)  |  ![](readme_assets/AboutUs.png)  | 
 
 
 ## Motivation
