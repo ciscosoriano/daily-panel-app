@@ -4,7 +4,7 @@
 
 Name:   Daily Panel Android App
 
-This is a project that turns website http://dailypanel.org/ into a user-friendly Android application. 
+This is a project that turns the website http://dailypanel.org/ into a user-friendly Android application. 
 
 The goal of this app is to help and dignify those who are learning to read English. 
 The app is designed to be as simple and easy-to-use as possible, so the user can focus  on what matters most, learning to read English.
