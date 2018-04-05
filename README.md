@@ -12,6 +12,10 @@ The app is designed to be as simple and easy-to-use as possible, so the user can
 
 ![Animated Daily Panel app](readme_assets/Daily_Panel_App.gif)
 
+<p align="center">
+ <kbd><img width="300" height="533" src="https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/Daily_Panel_App.gif"></kbd>
+</p>
+
 ## Code Description
 
 The key functions of the Daily Panel App are:
@@ -23,6 +27,8 @@ Below are screen shots:
 
 ![Launch screen](readme_assets/Main.png)|
 ![Individual news panel](readme_assets/Panels.png)|
+
+
 ![About Us screen](readme_assets/AboutUs.png)|
 ![Founder screen](readme_assets/Founder.png)
 
