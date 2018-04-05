@@ -28,11 +28,13 @@ Below are screen shots:
 :---------------------------:|:-------------------------------: |:-------------------------------: |
 ![](readme_assets/Main.png)  |  ![](readme_assets/AboutUs.png)  |  ![](readme_assets/AboutUs.png)  | 
 
-![Founder screen](readme_assets/Founder.png) 
 
 ## Motivation
 
 Application was a group project for the "Grow with Google Challenge Scholarship: Android Basics" course on Udacity.
+The group was eager to assist the Daily Panel founder, Sam,  in creating an app which could be used for fundraising.
+
+![Founder screen](readme_assets/Founder.png) 
 
 ## Installation
 
