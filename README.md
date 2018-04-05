@@ -26,14 +26,8 @@ Below are screen shots:
 
   Main                       |  Panels                          |  About Us                        |               
 :---------------------------:|:-------------------------------: |:-------------------------------: |
-:---------------------------:|:-------------------------------: |:-------------------------------: |
 ![](readme_assets/Main.png)  |  ![](readme_assets/AboutUs.png)  |  ![](readme_assets/AboutUs.png)  | 
 
-![Launch screen](readme_assets/Main.png)
-![Individual news panel](readme_assets/Panels.png)
-
-
-![About Us screen](readme_assets/AboutUs.png)
 ![Founder screen](readme_assets/Founder.png) 
 
 ## Motivation
