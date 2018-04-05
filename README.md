@@ -35,7 +35,7 @@ Application was a group project for the "Grow with Google Challenge Scholarship:
 The group was eager to assist the Daily Panel founder, Sam Nelson,  in creating an app which could be used for fundraising.
 
 <p align="center">
- <kbd><img width="300" height="533" src="https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/Founder.jpg"></kbd>
+ <kbd><img width="300" height="533" src="https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/Founder.png"></kbd>
 </p>
 
 ## Installation
