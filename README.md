@@ -9,9 +9,6 @@ This is a project that turns website http://dailypanel.org/ into a user-friendly
 The goal of this app is to help and dignify those who are learning to read English. 
 The app is designed to be as simple and easy-to-use as possible, so the user can focus  on what matters most, learning to read English.
 
-
-![Animated Daily Panel app](readme_assets/Daily_Panel_App.gif)
-
 <p align="center">
  <kbd><img width="300" height="533" src="https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/Daily_Panel_App.gif"></kbd>
 </p>
