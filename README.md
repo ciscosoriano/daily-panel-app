@@ -22,11 +22,18 @@ The key functions of the Daily Panel App are:
 
 Below are screen shots:
 
-![Launch screen](readme_assets/Main.png)|
+<p align="center">
+ <kbd><img width="150" height="266" src="
+https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/Main.png,
+https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/AboutUs.png,
+https://github.com/ciscosoriano/daily-panel-app/blob/master/readme_assets/Founder.png"></kbd>
+</p>
+
+![Launch screen](readme_assets/Main.png)
 ![Individual news panel](readme_assets/Panels.png)
 
 
-![About Us screen](readme_assets/AboutUs.png)|
+![About Us screen](readme_assets/AboutUs.png)
 ![Founder screen](readme_assets/Founder.png) 
 
 ## Motivation
