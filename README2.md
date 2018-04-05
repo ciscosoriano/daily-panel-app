@@ -23,7 +23,7 @@ Below are screen shots:
 
 ![Launch screen](readme_assets/Main.png)|
 ![Individual news panel](readme_assets/Panels.png)|
-![About Us screen](readme_assets/Aboutus.png)|
+![About Us screen](readme_assets/AboutUs.png)|
 ![Founder screen](readme_assets/Founder.png)
 
 ## Motivation
@@ -44,12 +44,12 @@ Describe and show how to run the tests with code examples.
 
 The following group members designed and developed this project:
 
-Francisco Soriano
-Hailey Mortimore 
-Lakshmi Mahesh
-Lindsey Giuliano
-Allene Barrett
-Claudia Hill
+    Francisco Soriano
+    Hailey Mortimore
+    Lakshmi Mahesh
+    Lindsey Giuliano
+    Allene Barrett
+    Claudia Hill
 
 ## License
 
