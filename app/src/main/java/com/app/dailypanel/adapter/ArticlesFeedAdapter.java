@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -24,9 +25,6 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 import java.util.List;
-import java.util.Locale;
-
-
 
 public class ArticlesFeedAdapter extends BaseAdapter {
     private static final String TAG = ArticlesFeedAdapter.class.getName();
@@ -37,8 +35,6 @@ public class ArticlesFeedAdapter extends BaseAdapter {
 
     private ImageLoader mImageLoader;
     private DisplayImageOptions displayImageOptions;
-
-    TextToSpeech texttospeech_obj;
 
     public ArticlesFeedAdapter(Context newContext, Activity newActivity, List<Article> newArticleList) {
         Log.i(TAG, "ArticlesFeedAdapter");
@@ -52,7 +48,7 @@ public class ArticlesFeedAdapter extends BaseAdapter {
 
         displayImageOptions = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(true)
-                .showImageForEmptyUri(R.drawable.noimage)
+                .showImageForEmptyUri(R.drawable.no_image)
                 .cacheInMemory(true)
                 .cacheOnDisc(true)
                 .postProcessor(null)
@@ -62,17 +58,6 @@ public class ArticlesFeedAdapter extends BaseAdapter {
                 .build();
 
         displayHeadline();
-
-        //Initializing texttospeech_obj
-
-        texttospeech_obj = new TextToSpeech(mContext.getApplicationContext(), new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status != TextToSpeech.ERROR) {
-                    texttospeech_obj.setLanguage(Locale.US);
-                }
-            }
-        });
     }
 
     @Override
@@ -139,19 +124,6 @@ public class ArticlesFeedAdapter extends BaseAdapter {
 
         tvHeadlineDescription.setText(headlineDescription);
         mImageLoader.displayImage(headlineImageUri, ivHeadline, displayImageOptions);
-
-        //calling speak() using texttospeech_obj inside onclick listener for the TextView tvHeadlineDescription
-
-        final String text_speech=tvHeadlineDescription.getText().toString();
-
-        tvHeadlineDescription.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                texttospeech_obj.speak(text_speech,TextToSpeech.QUEUE_FLUSH, null);
-
-            }
-        });
 
         ivHeadline.setOnClickListener(new View.OnClickListener() {
             @Override

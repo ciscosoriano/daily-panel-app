@@ -6,8 +6,8 @@
     tools:context=".ReadPanelActivity">
 
     <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+        android:id="@+id/read_panel_toolbar"
+        layout="@layout/toolbar_sub_screen" />
 
     <GridView
         android:id="@+id/grid_view_panels"
@@ -19,7 +19,7 @@
         android:verticalSpacing="@dimen/spacing10"
         android:horizontalSpacing="@dimen/spacing10"
         android:stretchMode="columnWidth"
-        android:layout_below="@id/toolbar"
+        android:layout_below="@id/read_panel_toolbar"
         android:paddingTop="@dimen/padding10"
         android:paddingBottom="@dimen/padding10"/>
 </RelativeLayout>

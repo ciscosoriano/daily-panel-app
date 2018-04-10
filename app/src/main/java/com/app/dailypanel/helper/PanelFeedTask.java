@@ -66,7 +66,7 @@ public class PanelFeedTask extends AsyncTask<Void, Integer, Long> {
 
                     Log.d(TAG, "ArticleId: " + mArticleId + " PanelArticleId: " + panelArticleId);
 
-                    if(panelArticleId.equalsIgnoreCase(mArticleId)) {
+                    if (panelArticleId.equalsIgnoreCase(mArticleId)) {
                         String panelCaption = nodeObject.getString("Caption");
 
                         String panelImageSrc;

@@ -18,6 +18,7 @@
     <!-- layout  -->
     <dimen name="layout0">0dp</dimen>
     <dimen name="layout16">16dp</dimen>
+    <dimen name="layout20">20dp</dimen>
     <!-- elevation -->
     <dimen name="elevation0">0dp</dimen>
     <dimen name="elevation2">2dp</dimen>

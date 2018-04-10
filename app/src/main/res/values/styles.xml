@@ -5,6 +5,16 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:textColor">@color/colorDefaultText</item>
-        <item name="android:background">@color/colorDefaultBackground</item>
+
+        <item name="android:actionOverflowButtonStyle">@style/MenuOverFlowIcon</item>
+    </style>
+
+    <style name="MenuOverFlowIcon" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:background">@color/color_white</item>
+        <item name="android:src">@drawable/ic_more_vert_black_24dp</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:colorBackground">@color/color_white</item>
     </style>
 </resources>

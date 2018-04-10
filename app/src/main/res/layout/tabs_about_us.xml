@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@color/color_black"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding5">
+
+    <TextView
+        android:id="@+id/text_view_mission"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_mission"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txtSize_medium"
+        android:textStyle="bold"
+        android:onClick="tabsOnClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/text_view_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_news"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txtSize_medium"
+        android:textStyle="bold"
+        android:onClick="tabsOnClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/text_view_founder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_founder"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txtSize_medium"
+        android:textStyle="bold"
+        android:onClick="tabsOnClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/text_view_advisers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:singleLine="true"
+        android:text="@string/header_advisers"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txtSize_medium"
+        android:textStyle="bold"
+        android:onClick="tabsOnClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/text_view_contact_us"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_contact_us"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/txtSize_medium"
+        android:textStyle="bold"
+        android:onClick="tabsOnClick"
+        android:clickable="true"/>
+</LinearLayout>

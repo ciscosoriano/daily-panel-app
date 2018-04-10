@@ -6,144 +6,92 @@
     tools:context=".AboutActivity">
 
     <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+        android:id="@+id/about_toolbar"
+        layout="@layout/toolbar_sub_screen"/>
 
     <LinearLayout
-        android:id="@+id/linear_layout_top2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
+        android:layout_below="@id/about_toolbar"
         android:orientation="vertical"
+        android:paddingTop="@dimen/padding10"
         android:paddingLeft="@dimen/padding10"
         android:paddingRight="@dimen/padding10">
 
-        <RelativeLayout
-            android:id="@+id/relative_layout_aboutus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorToolbarBackground"
-            android:paddingBottom="@dimen/padding6"
-            android:paddingLeft="@dimen/padding10"
-            android:paddingRight="@dimen/padding10">
-
-            <TextView
-                android:id="@+id/daily_panel_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:background="@color/colorToolbarBackground"
-                android:clickable="true"
-                android:fontFamily="sans-serif-condensed"
-                android:onClick="onClick"
-                android:text="@string/home_text"
-                android:textSize="@dimen/txtSize_large"
-                android:paddingTop="@dimen/padding8"/>
-
-            <TextView
-                android:id="@+id/daily_panel_about"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:background="@color/colorToolbarBackground"
-                android:fontFamily="sans-serif-condensed"
-                android:onClick="onClick"
-                android:text="@string/about_text"
-                android:textSize="@dimen/txtSize_large"
-                android:textStyle="bold"
-                android:paddingTop="@dimen/padding8"/>
-
-        </RelativeLayout>
-
         <include
             android:id="@+id/tabs"
-            layout="@layout/tabs" />
+            layout="@layout/tabs_about_us"/>
 
         <WebView
-            android:id="@+id/aboutus_webview"
+            android:id="@+id/web_view_about_us"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:background="@color/colorToolbarBackground"
-            android:fontFamily="sans-serif-condensed"
             android:paddingBottom="@dimen/padding60"
             android:paddingLeft="@dimen/padding20"
             android:paddingRight="@dimen/padding20"
-            android:scrollbars="none"
-            android:visibility="visible" />
+            android:scrollbars="none"/>
 
         <WebView
-            android:id="@+id/mission_webview"
+            android:id="@+id/web_view_mission"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:background="@color/colorToolbarBackground"
-            android:fontFamily="sans-serif-condensed"
             android:paddingBottom="@dimen/padding60"
             android:paddingLeft="@dimen/padding40"
             android:paddingRight="@dimen/padding40"
             android:scrollbars="none"
-            android:visibility="gone" />
+            android:visibility="gone"/>
 
         <WebView
-            android:id="@+id/news_webview"
+            android:id="@+id/web_view_news"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:background="@color/colorToolbarBackground"
-            android:fontFamily="sans-serif-condensed"
             android:paddingBottom="@dimen/padding60"
             android:paddingLeft="@dimen/padding40"
             android:paddingRight="@dimen/padding40"
             android:scrollbars="none"
-            android:visibility="gone" />
+            android:visibility="gone"/>
 
         <WebView
-            android:id="@+id/founder_webview"
+            android:id="@+id/web_view_founder"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:background="@color/colorToolbarBackground"
-            android:fontFamily="sans-serif-condensed"
             android:paddingBottom="@dimen/padding60"
             android:paddingLeft="@dimen/padding40"
             android:paddingRight="@dimen/padding40"
             android:scrollbars="none"
-            android:visibility="gone" />
+            android:visibility="gone"/>
 
         <WebView
-            android:id="@+id/advisors_webview"
+            android:id="@+id/web_view_advisers"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:background="@color/colorToolbarBackground"
-            android:fontFamily="sans-serif-condensed"
             android:paddingBottom="@dimen/padding60"
             android:paddingLeft="@dimen/padding40"
             android:paddingRight="@dimen/padding40"
             android:scrollbars="none"
-            android:visibility="gone" />
+            android:visibility="gone"/>
 
         <WebView
-            android:id="@+id/contactus_webview"
+            android:id="@+id/web_view_contact_us"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:background="@color/colorToolbarBackground"
-            android:fontFamily="sans-serif-condensed"
             android:paddingBottom="@dimen/padding60"
             android:paddingLeft="@dimen/padding40"
             android:paddingRight="@dimen/padding40"
             android:scrollbars="none"
-            android:visibility="gone" />
-
+            android:visibility="gone"/>
     </LinearLayout>
 
     <include
         android:id="@+id/footer"
-        layout="@layout/footer"
+        layout="@layout/footer_about_us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
-
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

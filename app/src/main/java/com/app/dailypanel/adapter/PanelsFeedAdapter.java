@@ -3,6 +3,7 @@ package com.app.dailypanel.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -32,7 +33,7 @@ public class PanelsFeedAdapter extends BaseAdapter {
     private ImageLoader mImageLoader;
     private DisplayImageOptions displayImageOptions;
 
-    TextToSpeech texttospeech_obj;
+    private TextToSpeech mTextToSpeech;
 
     public PanelsFeedAdapter(Context newContext, Activity newActivity, List<Article> newPanelList) {
         Log.i(TAG, "PanelsFeedAdapter");
@@ -46,7 +47,6 @@ public class PanelsFeedAdapter extends BaseAdapter {
         displayImageOptions = new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(true)
                 .cacheInMemory(true)
-                .showImageForEmptyUri(R.drawable.noimage)  //added empty image
                 .cacheOnDisc(true)
                 .postProcessor(null)
                 .imageScaleType(ImageScaleType.EXACTLY)
@@ -54,13 +54,11 @@ public class PanelsFeedAdapter extends BaseAdapter {
                 .displayer(new FadeInBitmapDisplayer(200))
                 .build();
 
-        //Initializing texttospeech_obj
-
-        texttospeech_obj = new TextToSpeech(mContext.getApplicationContext(), new TextToSpeech.OnInitListener() {
+        mTextToSpeech = new TextToSpeech(mContext, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 if (status != TextToSpeech.ERROR) {
-                    texttospeech_obj.setLanguage(Locale.US);
+                    mTextToSpeech.setLanguage(Locale.US);
                 }
             }
         });
@@ -94,25 +92,21 @@ public class PanelsFeedAdapter extends BaseAdapter {
         TextView tvPanelCaption = (TextView) view.findViewById(R.id.text_view_panel_caption);
 
         String panelImageUri = article.getImageResource();
-        String panelCaption = article.getCaption();
+        final String panelCaption = article.getCaption();
 
-        //calling speak() using texttospeech_obj inside onclick listener for the TextView tvpanelCaption
-
-        final String text_speech=tvPanelCaption.getText().toString();
+        mImageLoader.displayImage(panelImageUri, ivPanelImage, displayImageOptions);
+        tvPanelCaption.setText(panelCaption);
 
         tvPanelCaption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                texttospeech_obj.speak(text_speech,TextToSpeech.QUEUE_FLUSH, null);
-
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    mTextToSpeech.speak(panelCaption, TextToSpeech.QUEUE_FLUSH, null, null);
+                } else {
+                    mTextToSpeech.speak(panelCaption, TextToSpeech.QUEUE_FLUSH, null);
+                }
             }
         });
-
-        Log.e(TAG, panelCaption);
-
-        mImageLoader.displayImage(panelImageUri, ivPanelImage, displayImageOptions);
-        tvPanelCaption.setText(panelCaption);
 
         return view;
     }

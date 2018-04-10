@@ -1,18 +1,22 @@
 <resources>
     <string name="app_name">Daily Panel</string>
-    <string name="footer_contact">The Daily Panel Inc. | (718)832-6348 |info@dailypanel.org | Twitter: @dailypanel</string>
+
+    <string name="about_us_text">About Us</string>
+    <string name="top_story_text">Top Stories</string>
+
+    <string name="header_mission"><u>MISSION</u></string>
+    <string name="header_news"><u>NEWS</u></string>
+    <string name="header_founder"><u>FOUNDER</u></string>
+    <string name="header_advisers"><u>BOARD-OF-ADVISORS</u></string>
+    <string name="header_contact_us"><u>CONTACT US</u></string>
+
+    <string name="footer_contact">The Daily Panel Inc. | (718)832-6348 | info@dailypanel.org | Twitter: @dailypanel</string>
     <string name="footer_copyright">The Daily Panel, Inc. is licensed under a Creative Commons Attribution 4.0 International License.</string>
-    <string name="home_text">HOME</string>
-    <string name="about_text">ABOUT US</string>
-    <string name="mission">MISSION</string>
-    <string name="news">NEWS</string>
-    <string name="founder">FOUNDER</string>
-    <string name="advisors">BOARD-OF-ADVISORS</string>
-    <string name="contactus">CONTACT US</string>
-    <string name="aboutus_text"><![CDATA[<section id="main-content" role="main"> <header > <h1 id="page-title">About Us</h1></header> <article id="article-27" role="article"> <blockquote><em> It is in the public interest to encourage the development of programming that involves creative risks and that addresses the needs of unserved and underserved audiences. </em></blockquote> <em>The Daily Panel</em> is a news publication, written in "sequential art", or "comic" format. It is meant for adults who have trouble reading long-form English text. <nav ></nav> </article> </section>]]></string>
+
+    <string name="about_us_content_text"><![CDATA[<section id="main-content" role="main"><article id="article-27" role="article"> <blockquote><em> It is in the public interest to encourage the development of programming that involves creative risks and that addresses the needs of unserved and underserved audiences. </em></blockquote> <em>The Daily Panel</em> is a news publication, written in "sequential art", or "comic" format. It is meant for adults who have trouble reading long-form English text. <nav ></nav> </article> </section>]]></string>
     <string name="mission_text"><![CDATA[<section id="main-content" role="main"><header > <h1 id="page-title">Mission</h1></header> <article id="article-28" role="article"> Using the medium of sequential art, we work to allow American adults with limited literacy to inform themselves about current events, in order to more fully participate in civic life. <nav ></nav> </article> <nav></nav> </section>]]></string>
     <string name="news_text"><![CDATA[<h1 id="page-title">Daily Panel News &amp; Announcements</h1><p><a href="http://www.dailypanel.org/about/news">http://www.dailypanel.org/about/news</a><br/></p> ]]></string>
     <string name="founder_text"> <![CDATA[<header > <h1 id="page-title">Founder</h1></header> <article id="article-366" role="article"> After graduating from Harvard in mathematics, <strong>Sam Nelson</strong> worked as a teacher at the Casablanca American School in Morocco. Returning to America, he studied at Teacher\'s College before becoming the Senior Software Engineer at Small World Software, a startup Web development company, and helping it grow from three employees to more than 50. <br /><br />He then became the Director of Software Development at The New York Times Electronic Media Company, helping to develop the Times\' web properties in a rapidly changing media environment. He left the Times to for Clever Name Here, a consulting company providing open-source solutions for not-for-profit organizations and labor unions. In 2014, he started <em>The Daily Panel.</em><header>]]></string>
-    <string name="advisors_text"> <![CDATA[ <h1 id="page-title">Board of Advisors</h1><p><a href="http://www.dailypanel.org/about/board">http://www.dailypanel.org/about/board</a><br/></p>]]></string>
-    <string name="contactus_text"><![CDATA[<header> <h1 id="page-title">Contact Us</h1></header><p><a href="http://www.dailypanel.org/about/contact">http://www.dailypanel.org/about/contact</a><br/></p>]]></string>
+    <string name="advisers_text"> <![CDATA[ <h1 id="page-title">Board of Advisors</h1><p><a href="http://www.dailypanel.org/about/board">http://www.dailypanel.org/about/board</a><br/></p>]]></string>
+    <string name="contact_us_text"><![CDATA[<header> <h1 id="page-title">Contact Us</h1></header><p><a href="http://www.dailypanel.org/about/contact">http://www.dailypanel.org/about/contact</a><br/></p>]]></string>
 </resources>

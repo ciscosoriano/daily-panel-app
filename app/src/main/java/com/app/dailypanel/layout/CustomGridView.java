@@ -1,6 +1,5 @@
 package com.app.dailypanel.layout;
 
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.GridView;
@@ -20,7 +19,6 @@ public class CustomGridView extends GridView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        // Max Height
         int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2,
                 MeasureSpec.AT_MOST);
 

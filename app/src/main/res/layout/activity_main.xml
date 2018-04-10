@@ -3,118 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorDefaultBackground"
     tools:context=".MainActivity">
 
     <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar_main"/>
 
-    <LinearLayout
-        android:id="@+id/linear_layout_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/toolbar"
-        android:paddingLeft="@dimen/padding10"
-        android:paddingRight="@dimen/padding10">
-
-        <RelativeLayout
-            android:id="@+id/relative_layout_main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorToolbarBackground"
-            android:paddingLeft="@dimen/padding10"
-            android:paddingRight="@dimen/padding10">
-
-
-            <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@null"
-                android:src="@drawable/refresh"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorToolbarBackground"
-                android:layout_alignParentStart="true"
-                android:fontFamily="sans-serif-condensed"
-                android:text="@string/home_text"
-                android:textStyle="bold"
-                android:textSize="@dimen/txtSize_large"
-                android:paddingTop="@dimen/padding8"/>
-
-            <TextView
-                android:id="@+id/daily_panel_about"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:background="@color/colorToolbarBackground"
-                android:onClick="onClick"
-                android:fontFamily="sans-serif-condensed"
-                android:text="@string/about_text"
-                android:textSize="@dimen/txtSize_large"
-                android:paddingTop="@dimen/padding8"/>
-
-        </RelativeLayout>
-    </LinearLayout>
-
-
-    <ScrollView
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding10"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_toolbar"
         android:layout_marginBottom="@dimen/padding10"
-        android:layout_below="@+id/linear_layout_top"
-        android:fillViewport="true"
-        android:scrollbars="none">
+        android:layout_marginTop="@dimen/padding10">
 
-        <LinearLayout
-            android:id="@+id/linear_layout_headline"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/padding10"
-            android:paddingRight="@dimen/padding10"
-            android:orientation="vertical">
+            android:fillViewport="true"
+            android:fadeScrollbars="true">
 
             <LinearLayout
+                android:id="@+id/linear_layout_headline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="@dimen/elevation2"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10">
 
-                <ImageView
-                    android:id="@+id/image_view_headline_image"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    android:adjustViewBounds="true"
-                    android:clickable="true" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/text_view_headline_description"
-                    android:textSize="@dimen/txtSize_mediumlarge"
-                    android:textStyle="bold"
+                    <ImageView
+                        android:id="@+id/image_view_headline_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/text_view_headline_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorArticleFeedBackground"
+                        android:paddingBottom="@dimen/padding10"
+                        android:paddingLeft="@dimen/padding10"
+                        android:textSize="@dimen/txtSize_mediumlarge"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.app.dailypanel.layout.CustomGridView
+                    android:id="@+id/grid_view_articles"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/padding10"
-                    android:paddingBottom="@dimen/padding10"
-                    android:background="@color/colorArticleFeedBackground"/>
+                    android:layout_height="match_parent"
+                    android:columnWidth="@dimen/padding150"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/padding10" />
             </LinearLayout>
-
-            <com.app.dailypanel.layout.CustomGridView
-                android:id="@+id/grid_view_articles"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:columnWidth="@dimen/padding150"
-                android:verticalSpacing="@dimen/padding10"
-                android:horizontalSpacing="@dimen/padding10"
-                android:stretchMode="columnWidth"
-                android:paddingTop="@dimen/padding10"/>
-
-        </LinearLayout>
-    </ScrollView>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </RelativeLayout>
