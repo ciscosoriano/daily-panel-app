@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Daily Panel</string>
 
+    <string name="ok_prompt">OK</string>
+
     <string name="about_us_text">About Us</string>
     <string name="top_story_text">Top Stories</string>
 

@@ -49,7 +49,7 @@ public class ReadPanelActivity extends AppCompatActivity {
                 new AlertDialog.Builder(this)
                         .setTitle("Unable to load panel feed")
                         .setMessage("Please check your Internet connection")
-                        .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(getString(R.string.ok_prompt), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
 
